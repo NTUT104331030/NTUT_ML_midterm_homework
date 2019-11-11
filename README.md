@@ -132,6 +132,7 @@
 ----
 ## 結果分析
 ![image](https://github.com/NTUT104331030/NTUT_ML_midterm_homework/blob/master/Pic/score.png)
+![image](https://github.com/NTUT104331030/NTUT_ML_midterm_homework/blob/master/Pic/截圖%202019-11-11%20下午4.35.29.png)
 
 ----
 ## 為什麼誤差值很大？（猜測）
