@@ -2,11 +2,28 @@
 
 ----
 ## 作法說明
-see [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
 
-> 
-----
+**剔除不需要的輸入參數**
+
+這邊選擇剔除掉銷售日期是因為相對於其他輸入參數，銷售日期的雜訊相對較多，也比較難看出日期跟房價之間的回歸關係
+
+![image](https://github.com/NTUT104331030/NTUT_ML_midterm_homework/blob/master/Pic/截圖%202019-11-11%20下午3.29.26.png)
+
+**使用MLP來訓練模型**
+
+一開始我使用線性回歸的方式來做預測模型，但後來發現預測精準度非常有限於事改成MLP來做預測其結果提升了8倍之多
+
+**多神經元深度模型**
+
+![image](https://github.com/NTUT104331030/NTUT_ML_midterm_homework/blob/master/Pic/截圖%202019-11-11%20下午3.53.22.png)
+
+**使用交叉驗證來提高準確度**
+![image](https://github.com/NTUT104331030/NTUT_ML_midterm_homework/blob/master/Pic/截圖%202019-11-11%20下午4.26.38.png)
+
+
 ## 程式流程圖
+
+![image](https://github.com/NTUT104331030/NTUT_ML_midterm_homework/blob/master/Pic/flow.png)
 
 
 **匯入函示庫**
@@ -114,19 +131,7 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
     
 ----
 ## 結果分析
-# headers
-
-*emphasis*
-
-**strong**
-    
-
-* list
-
->block quote
-
-    code (4 spaces indent)
-[links](https://wikipedia.org)
+![image](https://github.com/NTUT104331030/NTUT_ML_midterm_homework/blob/master/Pic/score.png)
 
 ----
 ## 為什麼誤差值很大？（猜測）
@@ -143,3 +148,4 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
 * 第二次嘗試：我參考書上的步驟加入了交叉驗證方法
 * 第三 ~ 五次嘗試：打開Excel查看個別參數跟價格之間的關係，測試不同輸入對模型的影響
 * 第六 ~ 八次嘗試：嘗試調整批次數量、訓練數量對模型的影響
+![image](https://github.com/NTUT104331030/NTUT_ML_midterm_homework/blob/master/Pic/severalTry.png)
